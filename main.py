@@ -4,10 +4,10 @@ from maze import maze
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-w", "--width", help="window width", default=7)
-parser.add_argument("-he", "--height", help="window height", default=5)
-parser.add_argument("-u", "--unit", help="window unit", default=50)
-parser.add_argument("-hw", "--h_weight", help="weight for h function", default=2)
+parser.add_argument("-w", "--width", help="window width", default=7, type=int)
+parser.add_argument("-he", "--height", help="window height", default=5, type=int)
+parser.add_argument("-u", "--unit", help="window unit", default=50, type=int)
+parser.add_argument("-hw", "--h_weight", help="weight for h function", default=2, type=float)
 
 args = parser.parse_args()
 
